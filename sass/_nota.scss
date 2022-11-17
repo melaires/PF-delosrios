@@ -1,0 +1,135 @@
+@use 'variables';
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgba(182, 106, 52, 0.144);
+}
+
+/*VISTA MOBILE*/
+#body__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.header__contenedor-completo-nota {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "logo enlaces"
+        "logo  redes";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    height: 120px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(252, 219, 212, 1) 20%, rgba(247, 148, 128, 1) 48%, rgba(246, 126, 101, 1) 91%, rgba(244, 103, 74, 1) 100%, rgba(238, 113, 88, 1) 100%, rgba(255, 90, 0, 1) 100%);
+
+    .header__logo {
+        grid-area: logo;
+
+        .header__redes {
+            grid-area: redes;
+
+            .navbar {
+                grid-area: enlaces;
+            }
+        }
+    }
+}
+
+/*imagen*/
+.nota-imagen {
+    display: flex;
+    justify-content: center;
+
+    .nota-img {
+        padding: 10px;
+        height: 200px;
+    }
+}
+
+/*texto*/
+.nota-h1-p {
+    padding: 20px;
+    text-align: center;
+
+    .nota-h1 {
+        margin: 30px 10px 0px 10px;
+        font-size: 70px;
+
+        .nota-p1 {
+            margin-top: 10px;
+            font-size: 60px;
+        }
+    }
+
+    .nota-h2 {
+        margin: 30px 10px 0px 10px;
+        font-size: 40px;
+
+        .nota-p2 {
+            margin-top: 10px;
+            font-size: 60px;
+
+        }
+    }
+
+    .nota-h3 {
+        margin: 30px 10px 0px 10px;
+        font-size: 40px;
+
+        .nota-p3 {
+            margin-top: 10px;
+            font-size: 60px;
+        }
+    }
+}
+
+.footer__notas {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    background: rgb(244, 103, 74);
+    background: linear-gradient(0deg, rgba(244, 103, 74, 1) 0%, rgba(247, 148, 128, 1) 37%, rgba(252, 219, 212, 1) 83%, rgba(255, 255, 255, 1) 100%);
+
+    .footer__notas-img {
+        margin: 20px;
+        height: 40px;
+    }
+}
+
+/*VISTA TABLET*/
+@media screen and (min-width:768px) {
+    .header__contenedor-completo-nota {
+        height: 200px;
+        width: 100%;
+    }
+    .nota-imagen {
+        display: flex;
+        justify-content: center;
+    
+        .nota-img {
+            margin-top: 10px;
+            padding: 10px;
+            height: 400px;
+        }
+    }
+}
+
+/*VISTA DESKTOP*/
+@media screen and (min-width:1024px) {
+    .nota-imagen {
+        display: flex;
+        justify-content: center;
+    
+        .nota-img {
+            padding: 10px;
+            height: 500px;
+        }
+    }
+    .footer__notas-img {
+        height: 60px;
+    }
+}

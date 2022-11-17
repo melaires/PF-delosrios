@@ -1,0 +1,220 @@
+@use 'variables';
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+#body__grid {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+/*VISTA MOBILE*/
+/*HEADER*/
+header {
+    grid-area: header;
+}
+.bg-pan-left {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(250, 237, 218, 1) 30%, rgba(245, 223, 187, 1) 57%, rgba(252, 178, 84, 1) 100%, rgba(254, 201, 137, 1) 100%);
+}
+.header__section {
+    display: grid;
+    grid-template-areas:
+        "logo enlaces";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    height: 120px;
+}
+/*logo*/
+.seccion__logo {
+    grid-area: logo;
+
+    .seccion__logo-a {
+        height: 100px;
+        padding: 10px;
+        border-radius: 50%;
+    }
+}
+/*enlaces*/
+.seccion__enlaces {
+    grid-area: enlaces;
+    margin: 20px;
+}
+/*MAIN*/
+.section__main {
+    grid-area: main;
+}
+/*izquierda botones*/
+.division__grids {
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas:
+        "botones"
+        "texto";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+.seccion__botones {
+    margin-top: 20px;
+    grid-area: botones;
+    .btn {
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 1.3em 3em;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #000;
+        background-color: #ba8636bd;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        &:hover {
+            background-color: #fff;
+            box-shadow: 0px 15px 20px rgba(92, 54, 0, 0.4);
+            color: #c48423;
+            transform: translateY(-7px);
+
+            &:active {
+                transform: translateY(-1px);
+            }
+        }
+    }
+}
+/*derecha titulo*/
+.titulo-redes {
+    grid-area: texto;
+}
+.section__h1-p {
+    margin-top: 10px;
+    grid-area: texto;
+    text-align: center;
+    .section__h1 {
+        text-decoration: underline;
+        color: #c48423;
+    }
+}
+/*redes*/
+.seccion__redes {
+    display: flex;
+    justify-content: center;
+    .seccion__redes-a {
+        margin: 10px;
+        height: 40px;
+    }
+}
+/*texto imagenes*/
+.img-edit {
+    margin: 40px;
+}
+.p-text {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+.p-texts {
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+/*footer*/
+.section__footer {
+    grid-area: footer;
+}
+.footer_nav-vg {
+    background: rgb(255, 141, 0);
+    background: linear-gradient(0deg, rgba(255, 141, 0, 1) 0%, rgba(255, 207, 117, 1) 48%, rgba(255, 226, 170, 1) 73%, rgba(255, 255, 255, 1) 100%);
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    .enlaces-a-vg {
+        height: 40px;
+        margin: 8px;
+        margin-top: 20px;
+    }
+}
+/*VISTA DESKTOP*/
+@media screen and (min-width:1024px) {
+
+    /*HEADER*/
+    #header__seccion {
+        display: grid;
+        grid-template-areas:
+            "logo enlaces";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        height: 220px;
+    }
+    /*logo*/
+    .seccion__logo {
+        grid-area: logo;
+        .seccion__logo-a {
+            height: 170px;
+        }
+    }
+    /*enlaces*/
+    .seccion__enlaces {
+        grid-area: enlaces;
+    }
+    
+    /*MAIN*/
+    /*izquierda botones*/
+    .division__grids {
+        display: grid;
+        grid-template-areas:
+            "botones texto";
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        .seccion__botones {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            grid-area: botones;
+            margin-top: 20px;
+            grid-area: botones;
+        }
+    }
+    /*derecha titulo*/
+    .titulo-redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        grid-area: texto;
+        .section__h1-p {
+            padding: 20px;
+        }
+    }
+    /*redes*/
+    .seccion__redes-a {
+        height: 50px;
+    }
+    /*texto imagenes*/
+    .p-text {
+        font-size: 20px;
+        margin: 0px;
+    }
+    .img-edit {
+        margin: 80px;
+    }
+    .p-texts {
+        font-size: 20px;
+        margin: 0px;
+    }
+    .img-edits {
+        margin: 80px;
+    }
+}

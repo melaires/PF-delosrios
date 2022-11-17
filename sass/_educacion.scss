@@ -1,0 +1,198 @@
+@use 'variables';
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#body__grid {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
+/*VISTA MOBILE*/
+/*HEADER*/
+header {
+    grid-area: header;
+}
+
+.contenedor__completo-educacion {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(250, 237, 218, 1) 30%, rgba(245, 223, 187, 1) 57%, rgba(252, 178, 84, 1) 100%, rgba(254, 201, 137, 1) 100%);
+}
+
+.header__seccion-ed {
+    display: grid;
+    grid-template-areas:
+        "logo enlaces";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    height: 110px;
+}
+
+/*logo*/
+.header__logo-ed {
+    grid-area: logo;
+
+    .logo-a-ed {
+        height: 100px;
+        padding: 10px;
+        border-radius: 50%;
+    }
+}
+
+/*izquierda botones*/
+.division__grids-ed {
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas:
+        "botones"
+        "texto";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+/*MAIN*/
+main {
+    grid-area: main;
+}
+
+/*izquierda botones*/
+.division__grids-ed {
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas:
+        "botones"
+        "texto";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+.seccion__botones-ed {
+    margin-top: 20px;
+    grid-area: botones;
+
+    .btn-ed {
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 1.3em 3em;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: black;
+        background-color: #c48423;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        border: 1px solid black;
+
+        &:hover {
+            background-color: white;
+            box-shadow: 0px 15px 20px rgba(92, 54, 0, 0.4);
+            color: black;
+            transform: translateY(-7px);
+
+            &:active {
+                transform: translateY(-1px);
+            }
+        }
+    }
+}
+
+/*derecha titulo*/
+.titulo-redes-ed {
+    grid-area: texto;
+}
+
+.section__h1-p-ed {
+    margin-top: 10px;
+    grid-area: texto;
+    text-align: center;
+
+    .section__h1-ed {
+        text-decoration: underline;
+        color: black;
+    }
+}
+
+.section__p-ed {
+    color: #c48423;
+}
+/*texto imagnes*/ 
+.p-text-ed{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+/*footer*/
+.section__footer {
+    grid-area: footer;
+}
+
+/*VISTA DESKTOP*/
+@media screen and (min-width:1024px) {
+
+    /*HEADER*/
+    .header__seccion-ed {
+        display: grid;
+        grid-template-areas:
+            "logo enlaces";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        height: 220px;
+    }
+
+    /*logo*/
+    .header__logo-ed {
+        grid-area: logo;
+
+        .logo-a-ed {
+            height: 170px;
+        }
+    }
+
+    /*enlaces*/
+    .seccion__enlaces {
+        grid-area: enlaces;
+    }
+      /*izquierda botones*/
+      .division__grids-ed {
+        display: grid;
+        grid-template-areas:
+            "botones texto";
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        .seccion__botones-ed {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            grid-area: botones;
+            margin-top: 20px;
+            grid-area: botones;
+        }
+    }
+    /*derecha titulo*/ 
+    .titulo-redes-ed{
+        grid-area: texto;
+        .section__p-ed{
+            font-size: 23px;
+            padding: 10px;
+        }
+    }
+
+}
