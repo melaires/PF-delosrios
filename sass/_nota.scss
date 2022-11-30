@@ -1,10 +1,10 @@
 @use 'variables';
 
 body {
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgba(182, 106, 52, 0.144);
 }
 
 /*VISTA MOBILE*/
@@ -24,7 +24,8 @@ body {
     grid-template-rows: auto auto;
     height: 120px;
     background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(252, 219, 212, 1) 20%, rgba(247, 148, 128, 1) 48%, rgba(246, 126, 101, 1) 91%, rgba(244, 103, 74, 1) 100%, rgba(238, 113, 88, 1) 100%, rgba(255, 90, 0, 1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(213, 173, 172, 1) 33%, rgba(187, 122, 121, 1) 59%, rgba(161, 73, 71, 1) 100%);
 
     .header__logo {
         grid-area: logo;
@@ -38,6 +39,10 @@ body {
         }
     }
 }
+.li-nota:hover {
+    transform: scale(1.1);
+    text-shadow: none;
+}
 
 /*imagen*/
 .nota-imagen {
@@ -46,45 +51,28 @@ body {
 
     .nota-img {
         padding: 10px;
-        height: 200px;
+        height: 250px;
     }
 }
 
 /*texto*/
 .nota-h1-p {
-    padding: 20px;
+    padding: 40px;
     text-align: center;
-
-    .nota-h1 {
-        margin: 30px 10px 0px 10px;
-        font-size: 70px;
-
-        .nota-p1 {
-            margin-top: 10px;
-            font-size: 60px;
-        }
-    }
-
-    .nota-h2 {
+    .nota-h {
         margin: 30px 10px 0px 10px;
         font-size: 40px;
+        color: #a14947;
 
-        .nota-p2 {
+        .nota-p {
             margin-top: 10px;
-            font-size: 60px;
-
+            font-size: 40px;
+            .nota-h1{
+                margin-top: 10px;
+            }
         }
     }
 
-    .nota-h3 {
-        margin: 30px 10px 0px 10px;
-        font-size: 40px;
-
-        .nota-p3 {
-            margin-top: 10px;
-            font-size: 60px;
-        }
-    }
 }
 
 .footer__notas {
@@ -92,7 +80,8 @@ body {
     display: flex;
     justify-content: center;
     background: rgb(244, 103, 74);
-    background: linear-gradient(0deg, rgba(244, 103, 74, 1) 0%, rgba(247, 148, 128, 1) 37%, rgba(252, 219, 212, 1) 83%, rgba(255, 255, 255, 1) 100%);
+    background: rgb(161, 73, 71);
+    background: linear-gradient(0deg, rgba(161, 73, 71, 1) 0%, rgba(187, 122, 121, 1) 33%, rgba(213, 173, 172, 1) 59%, rgba(255, 255, 255, 1) 100%);
 
     .footer__notas-img {
         margin: 20px;
@@ -106,10 +95,11 @@ body {
         height: 200px;
         width: 100%;
     }
+
     .nota-imagen {
         display: flex;
         justify-content: center;
-    
+
         .nota-img {
             margin-top: 10px;
             padding: 10px;
@@ -123,12 +113,29 @@ body {
     .nota-imagen {
         display: flex;
         justify-content: center;
-    
+
         .nota-img {
             padding: 10px;
             height: 500px;
         }
     }
+
+    /*texto*/
+    .nota-h1-p {
+        padding: 50px;
+        text-align: center;
+
+        .nota-h {
+            margin: 40px 20px 0px 20px;
+            font-size: 60px;
+            color: #a14947;
+
+            .nota-p {
+                font-size: 60px;
+            }
+        }
+    }
+
     .footer__notas-img {
         height: 60px;
     }
