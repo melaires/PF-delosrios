@@ -100,18 +100,6 @@ main {
     background-color: #ff66008f;
 }
 
-/* Animate Background Image */
-
-@-webkit-keyframes aitf {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    100% {
-        background-position: 100% 50%;
-    }
-}
-
 /*imagenes*/
 .main__sec-img {
     display: flex;
@@ -120,30 +108,6 @@ main {
     .main__sec-imgs {
         height: 250px;
         padding: 20px;
-    }
-}
-
-.main__sec-imgs {
-    transition: transform .2s;
-}
-
-.main__sec-imgs:hover {
-    transform: scale(1.2);
-}
-
-.sec-imgs {
-    transition: transform .2s;
-
-    &:hover {
-        transform: scale(1.2);
-    }
-}
-
-.sec-imgs-derecha {
-    transition: transform .2s;
-
-    &:hover {
-        transform: scale(1.2);
     }
 }
 

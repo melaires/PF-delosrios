@@ -87,15 +87,6 @@ main {
   background-color: rgba(255, 102, 0, 0.5607843137);
 }
 
-/* Animate Background Image */
-@-webkit-keyframes aitf {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
 /*imagenes*/
 .main__sec-img {
   display: flex;
@@ -104,28 +95,6 @@ main {
 .main__sec-img .main__sec-imgs {
   height: 250px;
   padding: 20px;
-}
-
-.main__sec-imgs {
-  transition: transform 0.2s;
-}
-
-.main__sec-imgs:hover {
-  transform: scale(1.2);
-}
-
-.sec-imgs {
-  transition: transform 0.2s;
-}
-.sec-imgs:hover {
-  transform: scale(1.2);
-}
-
-.sec-imgs-derecha {
-  transition: transform 0.2s;
-}
-.sec-imgs-derecha:hover {
-  transform: scale(1.2);
 }
 
 .mobile-no {
