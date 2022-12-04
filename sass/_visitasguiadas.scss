@@ -119,28 +119,6 @@ header {
         height: 40px;
     }
 }
-/*imagenes*/
-.main__sec-img-vg {
-    display: flex;
-    justify-content: center;
-}
-
-.main__sec-imgs-vg {
-    height: 250px;
-    padding: 20px;
-    transition: all 0.3s ease;
-
-    &:hover {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-    }
-
-}
-
-.mobile-no {
-    display: none;
-}
-
 /*texto imagenes*/
 .img-edit {
     margin: 40px;
@@ -231,65 +209,6 @@ header {
     .seccion__redes-a {
         height: 50px;
     }
-    /*imagenes*/
-    .mobile-no {
-        display: block;
-    }
-
-    .contenedor-imagenes-vg {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .main__sec-img-vg {
-        display: flex;
-        flex-direction: column;
-
-        .main__sec-imgs-vg {
-            height: 300px;
-            padding: 25px;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-
-        }
-    }
-
-    .sec-img-vg {
-        display: flex;
-        flex-direction: column;
-
-        .sec-imgs-vg {
-            height: 300px;
-            padding: 25px;
-            transition: all 0.3s ease;
-
-            &:hover {
-                -webkit-filter: grayscale(100%);
-                filter: grayscale(100%);
-                transform: scale(1.2);
-            }
-        }
-    }
-
-    .sec-img-derecha-vg {
-        display: flex;
-        flex-direction: column;
-
-        .sec-imgs-derecha-vg {
-            height: 300px;
-            padding: 25px;
-            transition: all 0.3s ease;
-
-            &:hover {
-                -webkit-filter: grayscale(100%);
-                filter: grayscale(100%);
-                transform: scale(1.1);
-            }
-        }
-    }
-
     /*texto imagenes*/
     .p-text {
         font-size: 20px;

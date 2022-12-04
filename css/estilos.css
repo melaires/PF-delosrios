@@ -81,11 +81,27 @@ main {
   grid-area: main;
 }
 
+/*decoracion*/
 .titulo-h1-p {
-  text-align: center;
+  flex-direction: column;
 }
-.titulo-h1-p .decoracion-principal {
-  height: 200px;
+
+.container__decoracion-principal {
+  display: flex;
+  justify-content: center;
+}
+.container__decoracion-principal .decoracion-principal {
+  height: 100px;
+}
+
+.container__texto-decoracion {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.container__texto-decoracion .titulo-h1 {
+  text-align: center;
+  font-size: 30px;
 }
 
 /*imagenes*/
@@ -129,7 +145,7 @@ main {
   justify-content: center;
 }
 .main__sec-img-marcelo .main__sec-img {
-  height: 400px;
+  height: 250px;
   margin-top: 5px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -138,14 +154,13 @@ main {
   text-align: center;
 }
 .h3-text-nota .h3-nota {
-  font-size: 35px;
+  font-size: 30px;
   margin-top: 5px;
 }
 
 .main__sec-nota-p2 {
   text-align: center;
   font-size: 15px;
-  margin: 0px 15px 3px 15px;
 }
 
 .main__sec-nota-a-edit {
@@ -341,6 +356,7 @@ svg:hover .tooltip {
 .container__mapa-calendario {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 /*mapa*/
@@ -359,7 +375,7 @@ svg:hover .tooltip {
 }
 .container__mapa-input .mapa-input {
   text-align: center;
-  width: 290px;
+  width: 250px;
 }
 
 .container__mapa-iframe {
@@ -367,7 +383,7 @@ svg:hover .tooltip {
   justify-content: center;
 }
 .container__mapa-iframe .mapa-iframe {
-  height: 300px;
+  height: 250px;
 }
 
 .container__mapa-a {
@@ -476,8 +492,13 @@ svg:hover .tooltip {
   .header__redes .redes-a {
     height: 60px;
   }
-  .enlaces-a {
-    font-size: 27px;
+  /*decoracion*/
+  .decoracion-principal {
+    height: 150px;
+  }
+  .titulo-h1 {
+    text-align: center;
+    font-size: 35px;
   }
 }
 /*VISTA DESKTOP*/
@@ -556,6 +577,28 @@ svg:hover .tooltip {
     top: 15%;
     background-color: #eca548;
   }
+  .decoracion-principal {
+    height: 250px;
+  }
+  .titulo-h1 {
+    font-size: 75px;
+  }
+  /*decoracion*/
+  .container__decoracion-principal {
+    display: flex;
+    justify-content: center;
+  }
+  .container__decoracion-principal .decoracion-principal {
+    height: 180px;
+  }
+  .container__texto-decoracion {
+    display: flex;
+    justify-content: center;
+  }
+  .container__texto-decoracion .titulo-h1 {
+    text-align: center;
+    font-size: 50px;
+  }
   /*imagenes*/
   .mobile-no {
     display: block;
@@ -617,11 +660,11 @@ svg:hover .tooltip {
   }
   /*nota*/
   .main__sec-nota-parr {
-    font-size: 25px;
+    font-size: 20px;
   }
   .main__sec-nota-p2 {
-    font-size: 25px;
-    padding: 30px;
+    font-size: 20px;
+    padding: 20px;
   }
   /*btn*/
   .container-img {
@@ -637,11 +680,15 @@ svg:hover .tooltip {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 30px;
+    width: 100%;
   }
   .container__calendario-btn {
     margin-top: 30px;
   }
   /*mapa*/
+  .main__container-mapa {
+    width: 45%;
+  }
   .mapa-input {
     width: 350px;
   }
@@ -649,6 +696,9 @@ svg:hover .tooltip {
     width: 180px;
   }
   /*calendario*/
+  .main__container-calendario {
+    width: 45%;
+  }
   .container__calendario-h4,
   .container__calendario-p,
   .container__calendario-li {
@@ -1142,26 +1192,6 @@ header {
   height: 40px;
 }
 
-/*imagenes*/
-.main__sec-img-vg {
-  display: flex;
-  justify-content: center;
-}
-
-.main__sec-imgs-vg {
-  height: 250px;
-  padding: 20px;
-  transition: all 0.3s ease;
-}
-.main__sec-imgs-vg:hover {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
-.mobile-no {
-  display: none;
-}
-
 /*texto imagenes*/
 .img-edit {
   margin: 40px;
@@ -1251,53 +1281,6 @@ header {
   /*redes*/
   .seccion__redes-a {
     height: 50px;
-  }
-  /*imagenes*/
-  .mobile-no {
-    display: block;
-  }
-  .contenedor-imagenes-vg {
-    display: flex;
-    justify-content: space-around;
-  }
-  .main__sec-img-vg {
-    display: flex;
-    flex-direction: column;
-  }
-  .main__sec-img-vg .main__sec-imgs-vg {
-    height: 300px;
-    padding: 25px;
-  }
-  .main__sec-img-vg .main__sec-imgs-vg:hover {
-    transform: scale(1.1);
-  }
-  .sec-img-vg {
-    display: flex;
-    flex-direction: column;
-  }
-  .sec-img-vg .sec-imgs-vg {
-    height: 300px;
-    padding: 25px;
-    transition: all 0.3s ease;
-  }
-  .sec-img-vg .sec-imgs-vg:hover {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transform: scale(1.2);
-  }
-  .sec-img-derecha-vg {
-    display: flex;
-    flex-direction: column;
-  }
-  .sec-img-derecha-vg .sec-imgs-derecha-vg {
-    height: 300px;
-    padding: 25px;
-    transition: all 0.3s ease;
-  }
-  .sec-img-derecha-vg .sec-imgs-derecha-vg:hover {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transform: scale(1.1);
   }
   /*texto imagenes*/
   .p-text {
