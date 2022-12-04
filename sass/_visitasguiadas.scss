@@ -24,6 +24,7 @@ header {
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(250, 237, 218, 1) 30%, rgba(245, 223, 187, 1) 57%, rgba(252, 178, 84, 1) 100%, rgba(254, 201, 137, 1) 100%);
 }
+
 .header__section {
     display: grid;
     grid-template-areas:
@@ -33,10 +34,10 @@ header {
     height: 120px;
 }
 /*logo*/
-.seccion__logo {
+.header__logo-vg {
     grid-area: logo;
 
-    .seccion__logo-a {
+    .logo-a-vg {
         height: 100px;
         padding: 10px;
         border-radius: 50%;
@@ -75,8 +76,9 @@ header {
         text-transform: uppercase;
         letter-spacing: 2.5px;
         font-weight: 500;
-        color: #000;
-        background-color: #ba8636bd;
+        color: black;
+        font-weight: bold;
+        background-color: #c48423da;
         border: none;
         border-radius: 45px;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -104,7 +106,7 @@ header {
     grid-area: texto;
     text-align: center;
     .section__h1 {
-        text-decoration: underline;
+        text-shadow: 1px 1px 2px black;
         color: #c48423;
     }
 }
@@ -160,10 +162,12 @@ header {
         height: 220px;
     }
     /*logo*/
-    .seccion__logo {
+    .header__logo-vg {
         grid-area: logo;
-        .seccion__logo-a {
-            height: 170px;
+
+        .logo-a-vg {
+            padding: 20px;
+            height: 180px;
         }
     }
     /*enlaces*/
@@ -196,6 +200,9 @@ header {
         grid-area: texto;
         .section__h1-p {
             padding: 20px;
+            .section__p{
+                font-size: 20px;
+            }
         }
     }
     /*redes*/
@@ -217,4 +224,5 @@ header {
     .img-edits {
         margin: 80px;
     }
+   
 }

@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Museo de cine e infancia para todas las edades y todo tipo de publico, contamos con mas de 1500 piezas">
-    <meta name="keywords" content="cine, fotos, audiovisual,edicion, educacion, visitas guiadas, cortometrajes, peliculas, infancia, historia, arte, nota, biografia, artista">
+    <meta name="description"
+        content="Museo de cine e infancia para todas las edades y todo tipo de publico, contamos con mas de 1500 piezas">
+    <meta name="keywords"
+        content="cine, fotos, audiovisual,edicion, educacion, visitas guiadas, cortometrajes, peliculas, infancia, historia, arte, nota, biografia, artista">
     <title>Marcelo de los Ríos</title>
     <link rel="icon" href="../img/logo.jpg">
     <!--boostrap-->
@@ -26,8 +28,10 @@
     <header>
         <div class="header__contenedor-completo-nota">
             <!--logo-->
-            <nav class="header__logo">
-                <a href="https://www.facebook.com/people/Museo-de-la-Infancia/100083172469325/" target="_blank" > <img src="../img/logo.jpg" alt="imágen logo" class="logo-a"> </a>
+            <nav class="header__logo-nota">
+                <a href="../index.html" target="_blank"> <img src="../img/notasoficial.png" alt="imágen logo"
+                        class="logo-a-nota">
+                </a>
             </nav>
 
             <!--redes-->
@@ -42,191 +46,231 @@
                 </a>
             </nav>
 
-                           <!--enlaces-->
-                <!--enlaces mobil y tablet-->
-                <nav class="navbar fixed-top nav-index" id="desktop-no-index">
+            <!--enlaces-->
+            <!--enlaces mobil y tablet-->
+            <nav class="navbar fixed-top nav-index" id="desktop-no-index">
 
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="../html/notas.html">Conocenos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="../html/educacion.html">Educación</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="../html/visitasguiadas.html">Visitas guiadas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="../html/fotospersonalizadas.html">Fotos
+                                        personalizadas</a>
+                                </li>
+
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!--enlaces desktop-->
+            <nav id="mobil-no-index" class="header__enlaces">
+
+                <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#"></a>
-                        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                            aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                                </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="../html/notas.html">Conocenos</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="../html/educacion.html">Educación</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="../html/visitasguiadas.html">Visitas guiadas</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="../html/fotospersonalizadas.html">Fotos personalizadas</a>
-                                    </li>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav navbar-nota">
+                                <li class="nav-item nav-item-nota">
+                                    <a class="nav-link nav-nota active" aria-current="page"
+                                        href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item nav-item-nota">
+                                    <a class="nav-link nav-nota active" href="../html/educacion.html">Educación</a>
+                                </li>
+                                <li class="nav-item nav-item-nota">
+                                    <a class="nav-link nav-nota active" href="../html/visitasguiadas.html">Visitas
+                                        guiadas</a>
+                                </li>
+                                <li class="nav-item nav-item-nota">
+                                    <a class="nav-link nav-nota active" href="../html/fotospersonalizadas.html">Fotos
+                                        personalizadas</a>
+                                </li>
 
-                                </ul>
-                                <form class="d-flex mt-3" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Buscar"
-                                        aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                                </form>
-                            </div>
+                            </ul>
                         </div>
                     </div>
                 </nav>
-
-                <!--enlaces desktop-->
-                <nav id="mobil-no-index" class="header__enlaces">
-
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="container-fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav menu-nota">
-                                    <li class="nav-item li-nota">
-                                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                                    </li>
-                                    <li class="nav-item li-nota">
-                                        <a class="nav-link active" href="../html/educacion.html">Educación</a>
-                                    </li>
-                                    <li class="nav-item li-nota">
-                                        <a class="nav-link active" href="../html/visitasguiadas.html">Visitas guiadas</a>
-                                    </li>
-                                    <li class="nav-item li-nota">
-                                        <a class="nav-link active" href="../html/fotospersonalizadas.html">Fotos
-                                            personalizadas</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-            </div>
+        </div>
         </div>
     </header>
     <main>
-        <!--imagen-->
-        <section class="nota-imagen">
-            <img class="nota-img" src="../img/notaoriginal2.png.png" alt="Imágen de Marcelo de los Ríos">
-        </section>
+     
         <!--nota-->
         <section class="nota-h1-p">
-            <h1 class="nota-h nota-h1">¿Quíen es Marcelo de los Ríos?</h1>
-
-
-            <p class="nota-p"> Nació en la ciudad de Buenos Aires el 29 de octubre de 1963.
-                Desde muy joven incursionó en distintas áreas relacionadas con el arte y la cultura.
-                Con solo 15 años participó en la primera bienal internacional del humor y la historieta, siendo el
-                participante más joven de dicho evento.
-                En esos tiempos comenzó su carrera como dibujante e historietista, trabajando en la revista Anteojito.
-                Aquí se destacó dibujando a los personajes de esta empresa y publicando historietas con personajes
-                propios
-                como Canibaldo y Fantomenos, entre otros.
-                Aquí también comenzó su carrera como animador en la tira El mundo de Calculín, que se emitía por canal
-                13.
-                Muchas fueron las empresas donde Marcelo publicó sus trabajos, como por ejemplo: Biliken, donde manejo
-                la campaña publicitaria y gráfica para la empresa Arcor.
-                También se destacó en ilustraciones en las revistas, Aventuras de Hijitus, Desventuras de Larguirucho,
-                Condorito, Petete etc.
-                Pero la vocación de Marcelo no pasaba solo por el dibujo.
-                En el año 84 comenzó su carrera como titiritero y guionista, cuando fue llamado del programa Telejuegos
-                para incluir en el elenco su primer trabajo como diseñador de personajes, estamos hablando del
-                entrañable Willy Baterola.
-                A partir de ahí, no dejó de diseñar personajes que brillaron durante más de dos décadas en las
-                pantallas de distintos canales de televisión y teatros de todo el país.
-                Paralelamente las empresas Disney y Hanna Barbera, también contaron con las hábiles manos de Marcelo
-                para distintos diseños con los personajes de dichas empresas.
-            </p>
-            <h2 class="nota-h">
-                En la lista de programas de televisión donde participó podemos mencionar:
-            </h2>
-            <p class="nota-p">
-            1986 mesa de noticias, atc. creacion y realización del personaje Esqueletor junto a Juan Carlos Mesa y
-            Gianni Lumadei.
-            1987 Magichicos, teatro de la galería, creación y realización de los personajes, el conejo Gregorio, el
-            genio Eugenio, Panchuflo y Monona.
-            1987 Magilocuras Show, teatro Arlequines, creación y operación tecnica de la maquina infernal junto a los
-            magos Rodo y Merpin.
-            1988 Teleamigos, atc. creación y realizacion del conejo Gregorio, junto a Silvia Cichelo.
-            1990 El show de los juguetes,, atc. animación del conejo Gregorio y otros, junto a Paula Diagosti.
-            1991 Los juegos del terror, canal 11 (Telefe) creación y realización de los personajes, Esteban Piro, Devora
-            La Planta Carnívora, Tupan Jamón y Frank Einstein, junto a Raul Portal.
-            1992 Plata feliz, canal 2, creación y realización de los personajes Boby y Corbatita, junto a Fabiana Uria.
-            1993 Robocopia, creación y realizacion del personaje El asistonto, junto a Raul Becerra y Raul Portal.
-            1993 Los Simpson teatro Coliseo.
-            1994 Robocopia 2, atc. creación y realización de los personajes el Chochan y Babaco, junto a Raul Becerra y
-            Raul Portal.
-            1994 Robocopia 3, atc. animación y voz de los personajes, el Chochan, Babaco, Telelo, la momia Daniel,
-            Roberto Langa, el Investigato, junto a Raul Becerra y Raul Portal.
-            1995 Rock Sport, cv Sport, creación y realización del personaje segismundo, junto a Hernán Caire.
-            1998 El club de la flaca, atc. creación y realización de los personajes Carmelo y Benjamín, junto a Linda
-            Peretz.
-            1998 Cyberpibes, atc. creación de los personajes, Cyber, Chucho y Mugre, junto a Juan Gabriel Altavista.
-            1999 Azul Toons, Azul tv. Creación del personaje Frankie.
-            2001 Jardín azul, Azul tv. Creación y realizacion de los personajes Maru y Narciso.
-            2001Titanes en el ring, America, creación del personaje, El hombre elástico.
-            2003 Súbito show, canal 7. Realización, animación y voz del personaje Don Raspin, junto a María Belén
-            Aramburu.
-            2004 El portal de las mascotas, America. Creación y realización del personaje Kongo, junto a Raul Portal.
-            2007 Saludarnos, canal 7. Creación y animación, libro y voz del personaje el Doctor Sanito, junto a Federica
-            Paiz y Pablo Mesina.
-            Realización, animación y libro de los personajes: Fracasati, Gregorio, Paturro y Mugre, para obras teatrales
-            como "aventuras en el Laboratoons".
-            Debido a su gran experiencia en el dominio de las técnicas televisivas no tardó en llegar la publicidad a su vida.
-            A partir del año 2000 comenzó una serie de comerciales para distintas empresas como por ejemplo;
-            CHEEKY BABY,BARBIE, TEMBLEKE SIMPSONS, GUERREROS DE MEDIO EVO, RIDERS, FIGURITAS PANINI, SEGELIN,
-            SERENITO,CAMARA ARGENTINA DEL JUGUETE,LA SALTEÑA, CITY KIDS, BOB ESPONJA,HOT WILS, ETC.
-            Ademas, aquí en cordoba, Marcelo diseña y confecciona los disfraces de los Simpsons para la empresa
-            Pritty.
-            </p>
-            <h3 class="nota-h">
-                Historia de la creación del conocido y querido museo de cine e infancia "QÚE DUO"
-            </h3>
+            <section class="nota-box">
+                <h1 class="nota-h nota-h1">¿Quíen es Marcelo de los Ríos?</h1>
+                <p class="nota-p"> Nació en la ciudad de Buenos Aires el 29 de octubre de 1963.
+                    Desde muy joven incursionó en distintas áreas relacionadas con el arte y la cultura.
+                    Con solo 15 años participó en la primera bienal internacional del humor y la historieta, siendo el
+                    participante más joven de dicho evento.
+                    En esos tiempos comenzó su carrera como dibujante e historietista, trabajando en la revista
+                    Anteojito.
+                    Aquí se destacó dibujando a los personajes de esta empresa y publicando historietas con personajes
+                    propios
+                    como Canibaldo y Fantomenos, entre otros.
+                    Aquí también comenzó su carrera como animador en la tira El mundo de Calculín, que se emitía por
+                    canal
+                    13.
+                    Muchas fueron las empresas donde Marcelo publicó sus trabajos, como por ejemplo: Biliken, donde
+                    manejo
+                    la campaña publicitaria y gráfica para la empresa Arcor.
+                    También se destacó en ilustraciones en las revistas, Aventuras de Hijitus, Desventuras de
+                    Larguirucho,
+                    Condorito, Petete etc.
+                    Pero la vocación de Marcelo no pasaba solo por el dibujo.
+                    En el año 84 comenzó su carrera como titiritero y guionista, cuando fue llamado del programa
+                    Telejuegos
+                    para incluir en el elenco su primer trabajo como diseñador de personajes, estamos hablando del
+                    entrañable Willy Baterola.
+                    A partir de ahí, no dejó de diseñar personajes que brillaron durante más de dos décadas en las
+                    pantallas de distintos canales de televisión y teatros de todo el país.
+                    Paralelamente las empresas Disney y Hanna Barbera, también contaron con las hábiles manos de Marcelo
+                    para distintos diseños con los personajes de dichas empresas.
+                </p>
+            </section>
+            <section class="nota-box">
+                <h2 class="nota-h">
+                    En la lista de programas de televisión donde participó podemos mencionar:
+                </h2>
                 <p class="nota-p">
-            Creyendo que todo esto no era suficiente en materia cultural, llegó lo inevitable.
-            Desde muy chico Marcelo guardaba un juguete de goma de los actores cómicos Laurel y Hardy, conocidos en
-            nuestro país como el Gordo y el Flaco.
-            Este juguete seria la piedra fundamental de lo que hoy es el único museo de estos actores en
-            Latinoamérica y el tercero del mundo.
-            Actualmente, Marcelo sigue su carrera como creativo, pero con la variante que instaló en la ciudad de
-            Tanti, Córdoba este original museo y centro cultural.
-            Este cuenta con cinco amplios salones de exposición donde Marcelo exhibe en vitrinas las más de 1500
-            piezas del dúo, y de varios mitos cinematográficos de todas las épocas incluyendo en ésta amplia colección
-            artistas nacionales, como Tato Bores, Alberto Olmedo, Pepe Biondi, etc.
-            En este museo también recibe contingentes de turistas y colegios, donde cuenta la historia de los
-            comienzos del cine, y difunde entre las nuevas generaciones a los creadores del camino que transita actualmente el
-            cine moderno, se proyectan películas, realizando y promoviendo el “cine debate”, donde los grupos eligen
-            una película y se analiza entre todos y todas.
-            El museo QUE DÚO!, fue declarado de interés municipal y cultural por la dirección de cultura turismo y
-            deporte de la ciudad de Tanti. Seguidamente, en 2014 fue declarado de interés provincial por la Legislatura de Córdoba.
-            Este museo se mantuvo abierto al público durante los años 2013 al 2017, y durante este tiempo Marcelo
-            siguerealizando trabajos para distintas empresas como Pritty, confeccionando para estos, los diseños de los
-            personajes de los Simpsons y la Hera de Hielo, entre otros.
-            En el año 2017, Que Dúo se muda a La Falda, y se instala en el Mítico Edén Hotel de esta localidad,
-            donde amplia la muestra y la convierte en el Museo de la Infancia, recibiendo al igual que en Tanti, grupos de
-            turistas y colegios de todo el país.
-            Seguramente, todo lo expuesto es solo el principio de lo que este artista puede aportar a la cultura de
-            nuestro país, y seguramente esta biografía se irá ampliando satisfactoriamente con el transcurso de los
-            años venideros.>
-            </p>
+                    1986 mesa de noticias, atc. creacion y realización del personaje Esqueletor junto a Juan Carlos Mesa
+                    y
+                    Gianni Lumadei.
+                    1987 Magichicos, teatro de la galería, creación y realización de los personajes, el conejo Gregorio,
+                    el
+                    genio Eugenio, Panchuflo y Monona.
+                    1987 Magilocuras Show, teatro Arlequines, creación y operación tecnica de la maquina infernal junto
+                    a
+                    los
+                    magos Rodo y Merpin.
+                    1988 Teleamigos, atc. creación y realizacion del conejo Gregorio, junto a Silvia Cichelo.
+                    1990 El show de los juguetes,, atc. animación del conejo Gregorio y otros, junto a Paula Diagosti.
+                    1991 Los juegos del terror, canal 11 (Telefe) creación y realización de los personajes, Esteban
+                    Piro,
+                    Devora
+                    La Planta Carnívora, Tupan Jamón y Frank Einstein, junto a Raul Portal.
+                    1992 Plata feliz, canal 2, creación y realización de los personajes Boby y Corbatita, junto a
+                    Fabiana
+                    Uria.
+                    1993 Robocopia, creación y realizacion del personaje El asistonto, junto a Raul Becerra y Raul
+                    Portal.
+                    1993 Los Simpson teatro Coliseo.
+                    1994 Robocopia 2, atc. creación y realización de los personajes el Chochan y Babaco, junto a Raul
+                    Becerra y
+                    Raul Portal.
+                    1994 Robocopia 3, atc. animación y voz de los personajes, el Chochan, Babaco, Telelo, la momia
+                    Daniel,
+                    Roberto Langa, el Investigato, junto a Raul Becerra y Raul Portal.
+                    1995 Rock Sport, cv Sport, creación y realización del personaje segismundo, junto a Hernán Caire.
+                    1998 El club de la flaca, atc. creación y realización de los personajes Carmelo y Benjamín, junto a
+                    Linda
+                    Peretz.
+                    1998 Cyberpibes, atc. creación de los personajes, Cyber, Chucho y Mugre, junto a Juan Gabriel
+                    Altavista.
+                    1999 Azul Toons, Azul tv. Creación del personaje Frankie.
+                    2001 Jardín azul, Azul tv. Creación y realizacion de los personajes Maru y Narciso.
+                    2001Titanes en el ring, America, creación del personaje, El hombre elástico.
+                    2003 Súbito show, canal 7. Realización, animación y voz del personaje Don Raspin, junto a María
+                    Belén
+                    Aramburu.
+                    2004 El portal de las mascotas, America. Creación y realización del personaje Kongo, junto a Raul
+                    Portal.
+                    2007 Saludarnos, canal 7. Creación y animación, libro y voz del personaje el Doctor Sanito, junto a
+                    Federica
+                    Paiz y Pablo Mesina.
+                    Realización, animación y libro de los personajes: Fracasati, Gregorio, Paturro y Mugre, para obras
+                    teatrales
+                    como "aventuras en el Laboratoons".
+                    Debido a su gran experiencia en el dominio de las técnicas televisivas no tardó en llegar la
+                    publicidad
+                    a su vida.
+                    A partir del año 2000 comenzó una serie de comerciales para distintas empresas como por ejemplo;
+                    CHEEKY BABY,BARBIE, TEMBLEKE SIMPSONS, GUERREROS DE MEDIO EVO, RIDERS, FIGURITAS PANINI, SEGELIN,
+                    SERENITO,CAMARA ARGENTINA DEL JUGUETE,LA SALTEÑA, CITY KIDS, BOB ESPONJA,HOT WILS, ETC.
+                    Ademas, aquí en cordoba, Marcelo diseña y confecciona los disfraces de los Simpsons para la empresa
+                    Pritty.
+                </p>
+            </section>
+            <section class="nota-box">
+                <h3 class="nota-h">
+                    Historia de la creación del conocido y querido museo de cine e infancia "QÚE DUO"
+                </h3>
+                <p class="nota-p">
+                    Creyendo que todo esto no era suficiente en materia cultural, llegó lo inevitable.
+                    Desde muy chico Marcelo guardaba un juguete de goma de los actores cómicos Laurel y Hardy, conocidos
+                    en
+                    nuestro país como el Gordo y el Flaco.
+                    Este juguete seria la piedra fundamental de lo que hoy es el único museo de estos actores en
+                    Latinoamérica y el tercero del mundo.
+                    Actualmente, Marcelo sigue su carrera como creativo, pero con la variante que instaló en la ciudad
+                    de
+                    Tanti, Córdoba este original museo y centro cultural.
+                    Este cuenta con cinco amplios salones de exposición donde Marcelo exhibe en vitrinas las más de 1500
+                    piezas del dúo, y de varios mitos cinematográficos de todas las épocas incluyendo en ésta amplia
+                    colección
+                    artistas nacionales, como Tato Bores, Alberto Olmedo, Pepe Biondi, etc.
+                    En este museo también recibe contingentes de turistas y colegios, donde cuenta la historia de los
+                    comienzos del cine, y difunde entre las nuevas generaciones a los creadores del camino que transita
+                    actualmente el
+                    cine moderno, se proyectan películas, realizando y promoviendo el “cine debate”, donde los grupos
+                    eligen
+                    una película y se analiza entre todos y todas.
+                    El museo QUE DÚO!, fue declarado de interés municipal y cultural por la dirección de cultura turismo
+                    y
+                    deporte de la ciudad de Tanti. Seguidamente, en 2014 fue declarado de interés provincial por la
+                    Legislatura de Córdoba.
+                    Este museo se mantuvo abierto al público durante los años 2013 al 2017, y durante este tiempo
+                    Marcelo
+                    siguerealizando trabajos para distintas empresas como Pritty, confeccionando para estos, los diseños
+                    de
+                    los
+                    personajes de los Simpsons y la Hera de Hielo, entre otros.
+                    En el año 2017, Que Dúo se muda a La Falda, y se instala en el Mítico Edén Hotel de esta localidad,
+                    donde amplia la muestra y la convierte en el Museo de la Infancia, recibiendo al igual que en Tanti,
+                    grupos de
+                    turistas y colegios de todo el país.
+                    Seguramente, todo lo expuesto es solo el principio de lo que este artista puede aportar a la cultura
+                    de
+                    nuestro país, y seguramente esta biografía se irá ampliando satisfactoriamente con el transcurso de
+                    los
+                    años venideros.>
+                </p>
+            </section>
         </section>
     </main>
     <!--PIE DE PAGINA-->

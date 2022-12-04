@@ -34,7 +34,7 @@ header {
         "logo enlaces";
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
-    height: 110px;
+    height: 120px;
 }
 
 /*logo*/
@@ -91,7 +91,8 @@ main {
         letter-spacing: 2.5px;
         font-weight: 500;
         color: black;
-        background-color: #c48423;
+        font-weight: bold;
+        background-color: #c48423da;
         border: none;
         border-radius: 45px;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -124,20 +125,56 @@ main {
     text-align: center;
 
     .section__h1-ed {
-        text-decoration: underline;
-        color: black;
+        text-shadow: 2px 2px 2px #c48423;
+        color: #000000;
     }
 }
 
 .section__p-ed {
+    padding: 20px;
     color: #c48423;
-}
-/*texto imagnes*/ 
-.p-text-ed{
     font-size: 20px;
-    text-align: center;
-    margin: 10px;
 }
+/*imagenes*/
+.main__sec-img {
+    display: flex;
+    justify-content: center;
+}
+
+.main__sec-imgs {
+    height: 250px;
+    padding: 20px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+}
+
+.mobile-no {
+    display: none;
+}
+/*textos*/
+.section__p-img {
+    padding: 30px;
+}
+
+.section_h3-text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.p-text-ed {
+    text-align: center;
+    font-size: 20px;
+}
+
+.mobile-no {
+    display: none;
+}
+
 
 /*footer*/
 .section__footer {
@@ -162,7 +199,8 @@ main {
         grid-area: logo;
 
         .logo-a-ed {
-            height: 170px;
+            padding: 20px;
+            height: 180px;
         }
     }
 
@@ -170,13 +208,15 @@ main {
     .seccion__enlaces {
         grid-area: enlaces;
     }
-      /*izquierda botones*/
-      .division__grids-ed {
+
+    /*izquierda botones*/
+    .division__grids-ed {
         display: grid;
         grid-template-areas:
             "botones texto";
         grid-template-columns: auto auto;
         grid-template-rows: auto;
+
         .seccion__botones-ed {
             display: flex;
             flex-direction: column;
@@ -186,13 +226,94 @@ main {
             grid-area: botones;
         }
     }
-    /*derecha titulo*/ 
-    .titulo-redes-ed{
+
+    /*derecha titulo*/
+    .titulo-redes-ed {
         grid-area: texto;
-        .section__p-ed{
+
+        .section__p-ed {
             font-size: 23px;
             padding: 10px;
         }
+    }
+
+    .linea {
+        background-color: black;
+        width: 100%;
+        height: 2px;
+        display: block;
+    }
+  /*imagenes*/
+  .mobile-no {
+    display: block;
+}
+
+.contenedor-imagenes {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main__sec-img {
+    display: flex;
+    flex-direction: column;
+
+    .main__sec-imgs {
+        height: 250px;
+        padding: 10px;
+        &:hover {
+            transform: scale(1.1);
+        }
+
+    }
+}
+
+.sec-img {
+    display: flex;
+    flex-direction: column;
+
+    .sec-imgs {
+        height: 250px;
+        padding: 10px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            transform: scale(1.2);
+        }
+    }
+}
+
+.sec-img-derecha {
+    display: flex;
+    flex-direction: column;
+
+    .sec-imgs-derecha {
+        height: 250px;
+        padding: 10px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            transform: scale(1.1);
+        }
+    }
+}
+    /*textos*/
+    .section__p-img {
+        padding: 20px;
+    }
+
+    .section_h3-text {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .p-text-ed {
+        text-align: center;
+        font-size: 25px;
     }
 
 }
