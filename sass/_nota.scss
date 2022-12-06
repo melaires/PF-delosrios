@@ -32,7 +32,7 @@ body {
 
 
         .logo-a-nota {
-            height: 150px;
+            height: 120px;
             padding: 10px;
             border-radius: 50%;
         }
@@ -106,16 +106,6 @@ body {
 
 /*VISTA DESKTOP*/
 @media screen and (min-width:1024px) {
-
-    /*logo*/
-    .header__logo-nota {
-        padding: 20px;
-
-        .logo-a-nota {
-            height: 400px;
-        }
-    }
-
     /*enlaces*/
     #navbarNav {
         display: flex;
@@ -190,7 +180,7 @@ body {
         box-shadow: inset 5px 5px 10px #a9a9aa77,
             inset -5px -5px 10px #ffffff7e;
     }
-        
+
 
     .nota-h1-p {
         padding: 50px;

@@ -29,7 +29,6 @@ body {
     background-size: cover;
     width: 100%;
 
-
     .header__contenedor {
         display: grid;
         grid-template-areas:
@@ -47,7 +46,6 @@ body {
 .header__logo {
     grid-area: logo;
     display: flex;
-
 
     .logo-a {
         height: 100px;
@@ -96,7 +94,7 @@ main {
     grid-area: main;
 }
 
-/*decoracion*/
+/*decoracion y titulo*/
 .titulo-h1-p {
     flex-direction: column;
 }
@@ -117,7 +115,7 @@ main {
 
     .titulo-h1 {
         text-align: center;
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
@@ -139,6 +137,7 @@ main {
 
 }
 
+/*MOBILE NO*/
 .mobile-no {
     display: none;
 }
@@ -146,7 +145,7 @@ main {
 /*decoracion*/
 .decoracion-cinta-img {
     width: 100%;
-    height: 150px;
+    height: 100px;
     margin: 20px 0px;
     opacity: 0.8;
 }
@@ -482,7 +481,7 @@ svg:hover .tooltip {
 
 /*calendario*/
 .main__container-calendario {
-    margin-top: 20px;
+    margin-top: 40px;
 
     .container__calendario-btn {
         display: block;
@@ -495,16 +494,19 @@ svg:hover .tooltip {
     }
 }
 
+.container__calendario-h4 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.container__calendario-p {
+    text-align: center;
+}
+
 .container__calendario-li {
     text-decoration: none;
     display: flex;
     justify-content: center;
-
-}
-
-.container__calendario-h4,
-.container__calendario-p {
-    text-align: center;
 }
 
 /*FOOTER*/
@@ -518,7 +520,7 @@ svg:hover .tooltip {
     margin-top: 20px;
 
     .footer-index-img {
-        margin: 20px;
+        margin: 15px;
         height: 40px;
     }
 }
@@ -533,32 +535,30 @@ svg:hover .tooltip {
         }
     }
 
+    /*logo redes enlaces*/
     .header__logo {
-        grid-area: logo;
         display: flex;
 
-        .logo-a-nota {
-            height: 200px;
-            padding: 20px;
+        .logo-a {
+            height: 180px;
+            padding: 30px;
         }
     }
 
     .header__redes {
         margin-right: 40px;
-        margin-bottom: 15px;
 
         .redes-a {
             height: 60px;
         }
     }
 
-    /*decoracion*/
+    /*decoracion y titulo*/
     .decoracion-principal {
         height: 150px;
     }
 
     .titulo-h1 {
-        text-align: center;
         font-size: 35px;
     }
 }
@@ -570,18 +570,7 @@ svg:hover .tooltip {
     #header__contenedor-completo {
         height: 500px;
         background-attachment: fixed;
-        width: 100%;
         margin-bottom: 50px;
-    }
-
-    /*logo*/
-    .header__logo {
-        grid-area: logo;
-
-        .logo-a {
-            padding: 20px;
-            height: 180px;
-        }
     }
 
     /*enlaces*/
@@ -655,6 +644,7 @@ svg:hover .tooltip {
         background-color: #eca548;
     }
 
+    /*decoracion y titulo*/
     .decoracion-principal {
         height: 250px;
     }
@@ -662,8 +652,6 @@ svg:hover .tooltip {
     .titulo-h1 {
         font-size: 75px;
     }
-
-    /*decoracion*/
 
     .container__decoracion-principal {
         display: flex;
@@ -685,10 +673,6 @@ svg:hover .tooltip {
     }
 
     /*imagenes*/
-    .mobile-no {
-        display: block;
-    }
-
     .contenedor-imagenes {
         display: flex;
         justify-content: space-around;
@@ -743,6 +727,11 @@ svg:hover .tooltip {
         }
     }
 
+    /*MOBILE SI*/
+    .mobile-no {
+        display: block;
+    }
+
     /*btn*/
     .main__container-img-btn {
         display: flex;
@@ -766,7 +755,6 @@ svg:hover .tooltip {
         font-size: 20px;
         padding: 20px;
     }
-
     /*btn*/
     .container-img {
         padding: 20px;
@@ -779,11 +767,9 @@ svg:hover .tooltip {
 
     /*mapa calendario*/
     .container__mapa-calendario {
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
         margin-top: 30px;
-        width: 100%;
     }
 
     .container__calendario-btn {
@@ -806,6 +792,7 @@ svg:hover .tooltip {
     /*calendario*/
     .main__container-calendario {
         width: 45%;
+        margin-top: 10px;
     }
 
     .container__calendario-h4,

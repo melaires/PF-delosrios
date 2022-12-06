@@ -149,6 +149,26 @@ header {
         margin-top: 20px;
     }
 }
+/*VISTA TABLET*/
+@media screen and (min-width:768px) {
+    #header__contenedor-completo {
+        height: 400px;
+
+        .header__contenedor {
+            height: 200px;
+        }
+    }
+
+    /*logo redes enlaces*/
+    .header__logo {
+        display: flex;
+
+        .logo-a {
+            height: 180px;
+            padding: 30px;
+        }
+    }
+}
 /*VISTA DESKTOP*/
 @media screen and (min-width:1024px) {
 
